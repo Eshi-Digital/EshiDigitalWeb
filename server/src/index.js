@@ -6,7 +6,8 @@ const path = require("path");
 const cors = require("cors");
 
 // routes
-const contactFormRoute = require("./routes/contact-form");
+const contactFormRouter = require("./routes/contact-form");
+const userRouter = require("./routes/user");
 
 dotenv.config();
 
@@ -42,12 +43,13 @@ app.use(express.static(path.join(__dirname, "../public")));
  * Route Middleware
  */
 
-app.use("/api/v1/contactForms", contactFormRoute);
+app.use("/api/v1/contactForms", contactFormRouter);
+app.use("/api/v1/users", userRouter);
 
 app.use("*", (req, res, next) => {
   res.status(400).json({
     status: "error",
-    message: `The requested url ${req.originalUrl} doesnot exist`,
+    message: `The requested url ${req.originalUrl} does not exist`,
   });
 });
 

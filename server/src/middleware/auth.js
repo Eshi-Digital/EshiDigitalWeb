@@ -1,4 +1,6 @@
-const admin = require("../config/firebase-config");
+const User = require("../models/user");
+const jwt = require("jsonwebtoken");
+const { promisify } = require("util");
 
 /**
  *
@@ -15,23 +17,21 @@ exports.verifyUser = async (req, res, next) => {
     ) {
       token = req.headers.authorization.split(" ")[1];
     }
-    // if (!token) {
-    //   res.status(401).json({
-    //     status: "error",
-    //     message: "You are not logged in",
-    //   });
-    // }
-
-    try {
-      const decodeValue = await admin.auth().verifyIdToken(token);
-      if (decodeValue) {
-        req.user = decodeValue;
-        return next();
-      }
-    } catch (err) {
-      return res.json({ message: "Un authorized user" });
+    if (!token) {
+      res.status(401).json({
+        status: "error",
+        message: "You are not logged in",
+      });
     }
+
+    const { id } = await promisify(jwt.verify)(
+      token,
+      process.env.JWT_SECRET_KEY
+    );
+    const user = await User.findById(id);
+    req.user = user;
+    next();
   } catch (err) {
-    return res.json({ message: "Internal Error" });
+    //TODO: Handle Invalid Token, Expried Token
   }
 };

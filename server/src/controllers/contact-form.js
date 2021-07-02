@@ -17,17 +17,13 @@ exports.getAllContactForms = async (req, res, next) => {
       });
     }
 
-    const page = req.query.page * 1 || 1;
-    const limit = req.query.limit * 1 || 10;
-
-    const result = await ContactForm.paginate({
-      page,
-      limit,
+    const options = {
+      page: req.query.page * 1 || 1,
+      limit: req.query.limit * 1 || 10,
       sort: "-createdAt",
-    });
+    };
 
-    console.log(result);
-
+    const result = await ContactForm.paginate({}, options);
     res.status(200).json({
       status: "success",
       result,
