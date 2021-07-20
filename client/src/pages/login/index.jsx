@@ -1,9 +1,12 @@
-import React from "react";
+import React from 'react';
+
+import Navbar from '../../components/navbar/navbar';
 
 const LoginPage = () => {
   return (
     <>
-      <div className="app">Login</div>
+      <Navbar></Navbar>
+      {/* <div className="app">Login</div> */}
     </>
   );
 };
