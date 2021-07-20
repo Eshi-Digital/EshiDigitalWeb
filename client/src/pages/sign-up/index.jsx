@@ -1,14 +1,4 @@
-import React from "react";
-import StyleFirebaseUi from 'react-firebaseui/StyledFirebaseAuth';
-
-const configUi = {
-    signInFlow: 'popup',
-    signInOptions:[
-        
-    ]
-}
-
-const SignupPage = () => {
+const SignUpPage = () => {
   return (
     <>
       <div>Sign Up</div>
@@ -16,4 +6,4 @@ const SignupPage = () => {
   );
 };
 
-export default SignupPage;
+export default SignUpPage;

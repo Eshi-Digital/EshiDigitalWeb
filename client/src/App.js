@@ -2,7 +2,7 @@ import { Switch, Route } from "react-router-dom";
 
 import LoginPage from "./pages/login";
 import NotFoundPage from "./pages/not-found";
-import SignupPage from './pages/sign-up'
+import SignUpPage from "./pages/sign-up";
 
 import "./App.css";
 
@@ -16,7 +16,7 @@ function App() {
         <LoginPage />
       </Route>
       <Route path="/sign-up">
-        <SignupPage/>
+        <SignUpPage />
       </Route>
       <Route path="*">
         <NotFoundPage />

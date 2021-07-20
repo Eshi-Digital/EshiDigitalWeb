@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
-import "./config/firebase-config";
 import App from "./App";
 require("dotenv").config();
 
