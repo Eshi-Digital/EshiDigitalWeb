@@ -1,4 +1,4 @@
-import SocialMedia from '../social-media';
+import SocialMedia from '../socialMedia';
 
 const Navbar = () => {
   return (
