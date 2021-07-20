@@ -1,11 +1,18 @@
 import React from 'react';
 
-import Navbar from '../../components/navbar/navbar';
+import Navbar from '../../components/navbar';
+import CardText from '../../components/cardText';
+import OfferCard from '../../components/offer';
+import WorkingProcess from '../../components/workingProcess';
 
 const LoginPage = () => {
   return (
     <>
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar> */}
+      {/* <CardText></CardText> */}
+      {/* <OfferCard></OfferCard> */}
+      <WorkingProcess></WorkingProcess>
+
       {/* <div className="app">Login</div> */}
     </>
   );
