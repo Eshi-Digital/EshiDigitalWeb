@@ -47,7 +47,7 @@ const WorkingProcess = () => {
           <div class="icon">
             <img src="assets/images/working/3.png" alt="images_not_found" />
           </div>
-          <h4 class="title">SEO Research</h4>
+          <h4 class="title">Research</h4>
         </div>
 
         <div
