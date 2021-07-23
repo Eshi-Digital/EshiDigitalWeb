@@ -1,4 +1,5 @@
 import SocialMedia from '../socialMedia';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -35,9 +36,9 @@ const Navbar = () => {
                   <nav className="d-none d-lg-block">
                     <ul className="main-menu text-end">
                       <li className="main-menu-item">
-                        <a className="main-menu-link" href="index.html">
+                        <Link className="main-menu-link" to="/">
                           Home
-                        </a>
+                        </Link>
                       </li>
 
                       <li className="main-menu-item">
@@ -46,37 +47,37 @@ const Navbar = () => {
                         </a>
                         <ul className="sub-menu">
                           <li>
-                            <a className="sub-menu-link" href="about-us.html">
+                            <Link className="sub-menu-link" to="/team">
                               Team
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a className="sub-menu-link" href="faq.html">
+                            <Link className="sub-menu-link" to="/faq">
                               FAQ
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
 
                       <li className="main-menu-item">
-                        <a className="main-menu-link" href="case-details.html">
+                        <Link className="main-menu-link" to="/services">
                           Services
-                        </a>
+                        </Link>
                       </li>
                       <li className="main-menu-item">
-                        <a className="main-menu-link" href="#">
-                          Contact
-                        </a>
+                        <Link className="main-menu-link" to="/contact">
+                          Contact us
+                        </Link>
                       </li>
 
                       <li className="main-menu-item">
-                        <a
+                        {/* <a
                           className="btn btn-warning btn-hover-warning btn-lg"
                           href="blog-details.html"
                         >
                           Analyze Your Site{' '}
                           <i className="icofont-arrow-right"></i>
-                        </a>
+                        </a> */}
                       </li>
 
                       <li className="main-menu-item">

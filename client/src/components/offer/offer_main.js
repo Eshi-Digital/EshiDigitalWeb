@@ -4,7 +4,7 @@ import OfferCard from '.';
 const OfferMain = () => {
   return (
     <>
-      <section className="service-section section-pb-150">
+      <section className="service-section section-pb-150 pt-10">
         <div className="container">
           <div className="row">
             <CardText

@@ -25,14 +25,6 @@ const Home = () => {
       <TeamMembers></TeamMembers>
       <FAQ></FAQ>
       <FooterMain></FooterMain>
-      {/* <OfferCard></OfferCard> */}
-      {/* <HappyCustomer></HappyCustomer> */}
-      {/* <ProfileCard></ProfileCard> */}
-      {/* <div className="app">Login</div> */}
-
-      {/* <Contact></Contact> */}
-      {/* <Banner></Banner> */}
-      {/* <Service></Service> */}
     </>
   );
 };

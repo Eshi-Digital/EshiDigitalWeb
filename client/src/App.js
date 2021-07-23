@@ -4,10 +4,11 @@ import LoginPage from './pages/login';
 import NotFoundPage from './pages/not-found';
 import SignUpPage from './pages/sign-up';
 import Home from './pages/home';
+import Service from './pages/service';
+import ContactUs from './pages/contact/contact';
 
 import './App.css';
 import './assets/css/style.css';
-// import useScript from './hook/importScripts';
 
 function App() {
   return (
@@ -20,6 +21,12 @@ function App() {
       </Route>
       <Route path="/sign-up">
         <SignUpPage />
+      </Route>
+      <Route path="/services">
+        <Service />
+      </Route>
+      <Route path="/contact">
+        <ContactUs />
       </Route>
       <Route path="*">
         <NotFoundPage />

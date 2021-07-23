@@ -1,4 +1,4 @@
-const Banner = () => {
+const Banner = ({ bannerTitle, routePath }) => {
   return (
     <section className="bread-crumb-section">
       <img
@@ -14,14 +14,20 @@ const Banner = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2 className="title text-center">Digital Marketing</h2>
+            <h2 className="title text-center">{bannerTitle}</h2>
+            <h3 className="text-center text-white">
+              Here it is! All our services
+            </h3>
             <nav aria-label="breadcrumb">
-              <ol className="breadcrumb justify-content-center">
+              <ol
+                className="breadcrumb justify-content-center"
+                style={{ background: 'none' }}
+              >
                 <li className="breadcrumb-item">
                   <a href="index.html">Home</a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
-                  <span>Case Details</span>
+                  <span>{routePath}</span>
                 </li>
               </ol>
             </nav>
