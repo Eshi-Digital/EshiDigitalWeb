@@ -1,295 +1,320 @@
+// import { Carousel } from 'react-bootstrap';
+import ServiceDetails from './service_details';
+import ServiceDetailsRevesed from './service_details_reversed';
+
+const services = [
+  {
+    mainTitle: 'Your company on your palm',
+    subTitle: 'Mobile App development',
+    content:
+      'In order to grow your company and unlock consumer scope, we can develop you mobile apps like never before. The digital era encourages consumers to embrace modern technologies easily, considering the time we are in, as corporations keep up with it and search for new ways to deliver their services.',
+    children: [
+      'Amazing UI Design',
+      'Cross platform',
+      'Continuous updates',
+      'Fully integrated',
+    ],
+    svg: (
+      <svg
+        height="150pt"
+        viewBox="-11 0 512 512.001"
+        width="150pt"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m261.4375 511.441406 138.851562-54.941406c54.765626-44.929688 89.710938-113.132812 89.710938-189.5 0-135.308594-109.691406-245-245-245s-245 109.691406-245 245c0 135.3125 109.691406 245 245 245 5.527344 0 11.003906-.199219 16.4375-.558594zm0 0"
+          fill="#27a3ff"
+        />
+        <path
+          d="m388.742188 318.949219c1.953124-23.644531-1.648438-47.335938-12.117188-68.628907-27.042969-55.011718-20.839844-59.003906-21.679688-113.601562 0-11.15625-9.042968-20.195312-20.195312-20.195312-11.15625 0-20.195312 9.039062-20.195312 20.195312 0 7.203125 0 203.832031 0 203.0625 0 3.148438-.335938 6.222656-.957032 9.1875v29.070312c0 24.496094-19.929687 44.429688-44.425781 44.429688-16.269531 0-72.375 0-110.550781 0 16.980468 23.617188 40.214844 42.113281 67.179687 53.3125.167969.066406.335938.136719.503907.207031 16.222656 6.855469 28.609374 19.78125 35.132812 35.453125 52.535156-3.480468 100.546875-23.507812 138.851562-54.9375l-15.050781-55.292968c-2.148437-7.902344-2.90625-16.117188-2.238281-24.277344zm0 0"
+          fill="#f9cfa9"
+        />
+        <path
+          d="m83.609375 117.230469-6.152344-5.699219c-9.480469-8.789062-24.429687-8.21875-33.214843 1.265625-8.785157 9.480469-8.214844 24.429687 1.265624 33.214844l38.101563 35.304687zm0 0"
+          fill="#f9cfa9"
+        />
+        <path
+          d="m285.621094 0h-172.714844c-16.757812 0-30.390625 13.636719-30.390625 30.394531v363.980469c0 16.757812 13.632813 30.394531 30.390625 30.394531h172.714844c16.757812 0 30.394531-13.636719 30.394531-30.394531v-363.980469c0-16.757812-13.636719-30.394531-30.394531-30.394531zm0 0"
+          fill="#3d4ec6"
+        />
+        <path
+          d="m141.035156 22.539062c-1.644531-2.445312-2.605468-5.386718-2.605468-8.554687 0-6.21875 3.703124-11.5625 9.015624-13.984375h-34.539062c-16.785156 0-30.394531 13.609375-30.394531 30.394531v363.980469c0 16.785156 13.609375 30.390625 30.394531 30.390625h36.71875v-375.589844c0-9.558593-3.253906-18.703125-8.589844-26.636719zm0 0"
+          fill="#2b3894"
+        />
+        <path
+          d="m100.109375 191.976562v202.398438c0 7.070312 5.730469 12.800781 12.796875 12.800781h172.714844c7.066406 0 12.796875-5.730469 12.796875-12.800781 0-6.945312 0-108.335938 0-202.398438zm0 0"
+          fill="#e6f7fe"
+        />
+        <path
+          d="m100.109375 191.976562v202.398438c0 7.070312 5.730469 12.800781 12.796875 12.800781h30.273438v-215.199219zm0 0"
+          fill="#d5f1fe"
+        />
+        <path
+          d="m169.675781 253.03125c0 11.074219-8.976562 20.050781-20.050781 20.050781s-20.050781-8.976562-20.050781-20.050781 8.976562-20.054688 20.050781-20.054688 20.050781 8.980469 20.050781 20.054688zm0 0"
+          fill="#3d4ec6"
+        />
+        <path
+          d="m169.675781 327.382812c0 11.074219-8.976562 20.054688-20.050781 20.054688s-20.050781-8.980469-20.050781-20.054688c0-11.074218 8.976562-20.050781 20.050781-20.050781s20.050781 8.976563 20.050781 20.050781zm0 0"
+          fill="#3d4ec6"
+        />
+        <path
+          d="m147.359375 233.113281c-10.007813 1.128907-17.785156 9.609375-17.785156 19.917969 0 11.074219 8.976562 20.050781 20.050781 20.050781 6.90625 0 12.992188-3.492187 16.597656-8.804687-17.289062 1.949218-28.296875-17.269532-18.863281-31.164063zm0 0"
+          fill="#2b3894"
+        />
+        <path
+          d="m147.359375 307.46875c-10.007813 1.125-17.785156 9.609375-17.785156 19.914062 0 11.078126 8.976562 20.054688 20.050781 20.054688 6.90625 0 12.992188-3.492188 16.597656-8.804688-17.183594 1.933594-28.359375-17.179687-18.863281-31.164062zm0 0"
+          fill="#2b3894"
+        />
+        <g fill="#11dfef">
+          <path d="m231.566406 244.695312h-28.46875c-4.140625 0-7.5-3.359374-7.5-7.5 0-4.144531 3.359375-7.5 7.5-7.5h28.46875c4.140625 0 7.5 3.355469 7.5 7.5 0 4.140626-3.359375 7.5-7.5 7.5zm0 0" />
+          <path d="m260.035156 276.367188h-56.9375c-4.144531 0-7.5-3.359376-7.5-7.5 0-4.144532 3.355469-7.5 7.5-7.5h56.9375c4.140625 0 7.5 3.355468 7.5 7.5 0 4.140624-3.359375 7.5-7.5 7.5zm0 0" />
+          <path d="m231.566406 319.046875h-28.46875c-4.140625 0-7.5-3.355469-7.5-7.5s3.359375-7.5 7.5-7.5h28.46875c4.140625 0 7.5 3.355469 7.5 7.5s-3.359375 7.5-7.5 7.5zm0 0" />
+          <path d="m260.035156 350.71875h-56.9375c-4.144531 0-7.5-3.355469-7.5-7.5 0-4.140625 3.355469-7.5 7.5-7.5h56.9375c4.140625 0 7.5 3.359375 7.5 7.5 0 4.144531-3.359375 7.5-7.5 7.5zm0 0" />
+        </g>
+        <path
+          d="m285.519531 17.597656h-25.667969c-2.421874 0-4.382812 1.960938-4.382812 4.378906 0 5.808594-4.75 10.558594-10.554688 10.558594h-91.496093c-5.808594 0-10.558594-4.75-10.558594-10.558594 0-2.417968-1.960937-4.378906-4.382813-4.378906h-25.667968c-7.070313 0-12.800782 5.730469-12.800782 12.796875v163.582031h198.3125v-163.582031c0-7.066406-5.730468-12.796875-12.800781-12.796875zm0 0"
+          fill="#f948b4"
+        />
+        <path
+          d="m143.179688 24.507812c-.203126-.8125-.320313-1.65625-.320313-2.527343 0-2.421875-1.960937-4.382813-4.382813-4.382813h-25.667968c-7.070313 0-12.800782 5.730469-12.800782 12.796875v163.582031h43.171876zm0 0"
+          fill="#e00e8b"
+        />
+        <path
+          d="m285.519531 17.597656h-25.667969c-2.421874 0-4.382812 1.960938-4.382812 4.378906 0 5.808594-4.75 10.558594-10.554688 10.558594h-50.464843l103.871093 130.203125v-132.34375c0-7.066406-5.730468-12.796875-12.800781-12.796875zm0 0"
+          fill="#fc7acd"
+        />
+        <path
+          d="m166.917969 77.207031h-34.585938c-4.140625 0-7.5-3.355469-7.5-7.5s3.359375-7.5 7.5-7.5h34.585938c4.140625 0 7.5 3.355469 7.5 7.5 0 4.140625-3.359375 7.5-7.5 7.5zm0 0"
+          fill="#fc7acd"
+        />
+        <path
+          d="m117.816406 241.191406c-7.730468 8.339844-20.761718 8.839844-29.105468 1.109375l-34.496094-31.964843c-8.34375-7.730469-8.839844-20.761719-1.109375-29.105469s20.761719-8.839844 29.105469-1.109375l34.496093 31.964844c8.339844 7.730468 8.839844 20.761718 1.109375 29.105468zm0 0"
+          fill="#f9cfa9"
+        />
+        <path
+          d="m116.707031 212.085938-16.410156-15.203126c2.160156 7.824219.367187 16.542969-5.550781 22.929688-5.921875 6.390625-14.480469 8.839844-22.441406 7.285156l16.40625 15.203125c8.34375 7.730469 21.371093 7.230469 29.105468-1.109375 7.730469-8.34375 7.230469-21.375-1.109375-29.105468zm0 0"
+          fill="#fbbc8d"
+        />
+        <path
+          d="m117.816406 297.363281c-7.730468 8.34375-20.761718 8.839844-29.105468 1.109375l-34.496094-31.964844c-8.34375-7.730468-8.839844-20.761718-1.109375-29.101562 7.730469-8.34375 20.761719-8.839844 29.105469-1.109375l34.496093 31.964844c8.339844 7.730469 8.839844 20.757812 1.109375 29.101562zm0 0"
+          fill="#f9cfa9"
+        />
+        <path
+          d="m117.816406 353.539062c-7.730468 8.34375-20.761718 8.839844-29.105468 1.109376l-34.496094-31.964844c-8.34375-7.730469-8.839844-20.761719-1.109375-29.105469s20.761719-8.839844 29.105469-1.109375l34.496093 31.964844c8.339844 7.730468 8.839844 20.761718 1.109375 29.105468zm0 0"
+          fill="#f9cfa9"
+        />
+        <path
+          d="m385.238281 401.207031c-1.066406-3.929687-1.789062-7.933593-2.167969-11.972656-38.164062 62.65625-112.257812 91.753906-181.855468 73.660156 7.761718 4.988281 15.984375 9.308594 24.585937 12.882813.167969.070312.335938.140625.503907.210937 16.222656 6.851563 28.609374 19.777344 35.132812 35.453125 52.535156-3.480468 100.546875-23.511718 138.851562-54.941406zm0 0"
+          fill="#fbbc8d"
+        />
+        <path
+          d="m116.707031 268.261719-16.410156-15.203125c2.160156 7.820312.367187 16.539062-5.550781 22.929687-5.921875 6.390625-14.480469 8.839844-22.441406 7.285157l16.40625 15.199218c8.34375 7.730469 21.375 7.234375 29.105468-1.109375 7.730469-8.34375 7.230469-21.371093-1.109375-29.101562zm0 0"
+          fill="#fbbc8d"
+        />
+        <path
+          d="m116.707031 324.433594-16.410156-15.203125c2.160156 7.824219.367187 16.542969-5.550781 22.929687-5.921875 6.390625-14.480469 8.84375-22.441406 7.285156l16.40625 15.203126c8.34375 7.730468 21.375 7.234374 29.105468-1.109376 7.730469-8.34375 7.230469-21.375-1.109375-29.105468zm0 0"
+          fill="#fbbc8d"
+        />
+      </svg>
+    ),
+  },
+
+  {
+    mainTitle: 'You are your website',
+    subTitle: 'Web design and development',
+    content:
+      'Your website is the most important component of your marketing strategy. It serves as the hub of all of your online activity. It is where you will make money, or lose money. We design websites that help you generate the most conversions. We do this by delivering an attractive design, mobile responsiveness, user-friendly and importantly, sales-focused websites.',
+    children: [
+      'Amazing design',
+      'Mobile first',
+      'SEO content',
+      'Continuous updates',
+      'Fully integrated',
+      'Regular reports',
+    ],
+    svg: (
+      <svg
+        id="Capa_1"
+        enable-background="new 0 0 512 512"
+        height="150pt"
+        viewBox="0 0 512 512"
+        width="150pt"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g>
+          <g>
+            <path
+              d="m512 318.237v-260.122c0-17.103-13.865-30.968-30.968-30.968h-450.064c-17.103 0-30.968 13.865-30.968 30.968v260.122l256 9.29z"
+              fill="#bed8fb"
+            />
+            <path
+              d="m0 318.237v18.581l256 9.29 256-9.29v-18.581z"
+              fill="#a3caf7"
+            />
+            <path
+              d="m443.914 75.764h-375.828c-8.551 0-15.484 6.932-15.484 15.484v45.845l203.398 9 203.398-9v-45.845c0-8.551-6.933-15.484-15.484-15.484z"
+              fill="#434d59"
+            />
+            <path
+              d="m459.398 318.237-203.398 9-203.398-9v-181.144h406.796z"
+              fill="#eceaec"
+            />
+            <path
+              d="m52.602 336.818 203.39 9 203.406-9v-18.581h-406.796z"
+              fill="#dad8db"
+            />
+            <path
+              d="m406.259 241.602v-59.674c0-2.851-2.311-5.161-5.161-5.161h-290.212c-2.851 0-5.161 2.311-5.161 5.161v59.674l150.275 9z"
+              fill="#df667c"
+            />
+            <path
+              d="m110.886 260.183h290.212c2.85 0 5.161-2.311 5.161-5.161v-13.419h-300.534v13.419c0 2.85 2.311 5.161 5.161 5.161z"
+              fill="#dc4857"
+            />
+            <path
+              d="m237.467 318.237-65.871 9-65.871-9v-18.511c0-2.85 2.311-5.161 5.161-5.161h121.419c2.85 0 5.161 2.311 5.161 5.161v18.511z"
+              fill="#edc963"
+            />
+            <path
+              d="m406.275 318.237-65.871 9-65.871-9v-18.511c0-2.85 2.311-5.161 5.161-5.161h121.419c2.851 0 5.161 2.311 5.161 5.161v18.511z"
+              fill="#edc963"
+            />
+            <path
+              d="m105.725 336.818 65.871 9 65.871-9v-18.581h-131.742z"
+              fill="#e7b93e"
+            />
+            <path
+              d="m274.533 336.818 65.871 9 65.871-9v-18.581h-131.742z"
+              fill="#e7b93e"
+            />
+            <path
+              d="m89.547 93.632c-6.569 0-11.914 5.345-11.914 11.915s5.345 11.914 11.914 11.914 11.915-5.345 11.915-11.914c-.001-6.57-5.346-11.915-11.915-11.915z"
+              fill="#df667c"
+            />
+            <path
+              d="m127.784 93.632c-6.569 0-11.914 5.345-11.914 11.915s5.345 11.914 11.914 11.914 11.915-5.345 11.915-11.914c-.001-6.57-5.346-11.915-11.915-11.915z"
+              fill="#edc963"
+            />
+            <path
+              d="m166.021 93.632c-6.569 0-11.915 5.345-11.915 11.915s5.345 11.914 11.915 11.914 11.915-5.345 11.915-11.914c0-6.57-5.345-11.915-11.915-11.915z"
+              fill="#b3e59f"
+            />
+            <path
+              d="m207.583 420.7-7.398 56.411h111.63l-7.398-56.411-48.417-9.29z"
+              fill="#dad8db"
+            />
+            <path
+              d="m304.417 420.7-2.436-18.581-45.981-9.29-45.981 9.29-2.436 18.581z"
+              fill="#c8c5c9"
+            />
+            <path
+              d="m30.968 392.829h450.065c30.967 0 30.967-23.155 30.967-40.258v-15.753h-512v15.753c0 17.103 2.224 40.258 30.968 40.258z"
+              fill="#eceaec"
+            />
+            <path
+              d="m346.117 484.853h-180.234c-4.276 0-7.742-3.466-7.742-7.742s3.466-7.742 7.742-7.742h180.234c4.276 0 7.742 3.466 7.742 7.742s-3.466 7.742-7.742 7.742z"
+              fill="#c8c5c9"
+            />
+            <path
+              d="m481.032 383.539h-450.064c-17.103 0-30.968-13.865-30.968-30.968v18.581c0 17.103 13.865 30.968 30.968 30.968h450.065c17.103 0 30.968-13.865 30.968-30.968v-18.581c-.001 17.103-13.866 30.968-30.969 30.968z"
+              fill="#dad8db"
+            />
+          </g>
+        </g>
+      </svg>
+    ),
+  },
+
+  {
+    mainTitle: 'Social media advertisment',
+    subTitle: 'Reaching your target with advertisment',
+    content:
+      'Two billion people use Facebook every month. Your customers and your future customers go there every day! Whether it’s for business-specific services or products that target individuals, Facebook can be a growth engine for your organization. Let us target the right people at the right time to drive sales for your business.',
+    children: [
+      'Targeted clicks',
+      'Lead generation',
+      'Brand awareness',
+      'Unlimited designs',
+      'Hyper-targeted',
+      'Detailed reports',
+    ],
+    svg: (
+      <svg
+        id="Capa_1"
+        enable-background="new 0 0 511 511"
+        height="150pt"
+        viewBox="0 0 511 511"
+        width="150pt"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="Outline_27_" fill="#233d91">
+          <path d="m255.5 193c-34.462 0-62.5 28.037-62.5 62.5s28.038 62.5 62.5 62.5c34.463 0 62.5-28.037 62.5-62.5s-28.037-62.5-62.5-62.5zm0 110c-26.191 0-47.5-21.309-47.5-47.5s21.309-47.5 47.5-47.5 47.5 21.309 47.5 47.5-21.309 47.5-47.5 47.5z" />
+          <path d="m59 477.905 70.579-49.405-70.579-49.405zm15-70 29.421 20.595-29.421 20.595z" />
+          <path d="m488.494 396h-24.494v-8.5c0-21.78-17.72-39.5-39.5-39.5h-5.3l-15.847 44.745-45.322-45.322 10.56-10.56-13.915-29.274 7.784-18.794 30.54-10.86v-44.869l-30.54-10.86-7.784-18.794 13.915-29.274-10.56-10.56 17.71-17.71c14.312 11.936 32.709 19.132 52.759 19.132 45.49 0 82.5-37.01 82.5-82.5s-37.01-82.5-82.5-82.5-82.5 37.01-82.5 82.5c0 20.05 7.196 38.447 19.133 52.759l-17.71 17.71-10.56-10.56-29.274 13.915-18.794-7.784-10.86-30.54h-44.87l-10.86 30.54-18.793 7.784-29.274-13.915-10.56 10.56-37.971-37.969h21.893c15.164 0 27.5-12.337 27.5-27.5v-60c0-15.163-12.336-27.5-27.5-27.5h-120c-15.164 0-27.5 12.337-27.5 27.5v60c0 15.163 12.336 27.5 27.5 27.5h14.5v34.923l63.759-33.557 47.211 47.211-10.56 10.56 13.916 29.274-7.785 18.794-30.541 10.861v44.869l30.54 10.86 7.785 18.794-13.916 29.274 10.56 10.56-17.71 17.71c-14.312-11.936-32.709-19.133-52.759-19.133-45.491 0-82.5 37.01-82.5 82.5s37.009 82.5 82.5 82.5 82.5-37.01 82.5-82.5c0-20.05-7.197-38.448-19.133-52.76l17.71-17.71 10.56 10.56 29.274-13.915 18.793 7.784 10.86 30.54h44.87l10.86-30.54 18.794-7.784 29.274 13.915 10.56-10.56 37.971 37.97h-15.393v105h28.557l18 10h44.479c17.469 0 32.871-12.382 36.625-29.442l12.809-58.223c1.472-6.691-.146-13.592-4.438-18.932-4.294-5.34-10.686-8.403-17.538-8.403zm-59.994-246c-16.091 0-30.878-5.668-42.489-15.101.216-15.634 8.828-29.618 22.413-36.87 5.532 4.359 12.502 6.97 20.076 6.97s14.544-2.611 20.076-6.97c13.585 7.251 22.197 21.236 22.413 36.87-11.611 9.434-26.398 15.101-42.489 15.101zm-17.5-77.5v-10c0-9.649 7.851-17.5 17.5-17.5s17.5 7.851 17.5 17.5v10c0 9.649-7.851 17.5-17.5 17.5s-17.5-7.85-17.5-17.5zm-50 10c0-37.22 30.28-67.5 67.5-67.5s67.5 30.28 67.5 67.5c0 14.182-4.406 27.349-11.907 38.224-3.803-14.449-13.105-26.875-26.097-34.601 1.923-4.146 3.004-8.759 3.004-13.623v-10c0-17.921-14.579-32.5-32.5-32.5s-32.5 14.579-32.5 32.5v10c0 4.863 1.081 9.477 3.004 13.623-12.992 7.726-22.294 20.152-26.097 34.601-7.501-10.875-11.907-24.042-11.907-38.224zm-256.353 17.5-47.647 25.077v-25.077h-29.5c-6.893 0-12.5-5.607-12.5-12.5v-60c0-6.892 5.607-12.5 12.5-12.5h120c6.893 0 12.5 5.607 12.5 12.5v60c0 6.893-5.607 12.5-12.5 12.5zm45.353 328.5c0 37.22-30.28 67.5-67.5 67.5s-67.5-30.28-67.5-67.5 30.28-67.5 67.5-67.5 67.5 30.28 67.5 67.5zm200.499-94.758-16.757 16.757-25.735-12.233-31.11 12.888-9.548 26.846h-23.698l-9.547-26.847-31.112-12.888-25.734 12.233-16.757-16.757 12.233-25.735-12.887-31.11-26.847-9.547v-23.697l26.847-9.548 12.887-31.11-12.233-25.735 16.757-16.757 25.734 12.233 31.112-12.888 9.547-26.847h23.698l9.548 26.847 31.11 12.888 25.735-12.233 16.757 16.757-12.233 25.735 12.888 31.11 26.846 9.548v23.697l-26.847 9.548-12.888 31.11zm145.319 86.37-12.809 58.224c-2.251 10.234-11.492 17.664-21.974 17.664h-40.592l-18-10h-17.443v-75h27.8l16.811-47.464c11.064 2.358 19.389 12.207 19.389 23.964v23.5h39.494c2.284 0 4.415 1.021 5.846 2.801s1.97 4.08 1.478 6.311z" />
+          <path d="m37.5 36h100v15h-100z" />
+          <path d="m37.5 66h70v15h-70z" />
+        </g>
+      </svg>
+    ),
+  },
+];
+
 const Service = () => {
   return (
     <>
-      <div className="service-carousel-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="service-carousel position-relative">
-                <div className="swiper-container">
-                  <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                      <div className="service-carousel-content">
-                        <img
-                          className="service-img"
-                          src="assets/images/service/1.jpg"
-                          alt="images-not_found"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="d-none d-md-block">
-                  <div className="service-carousel swiper-button-prev">
-                    <i className="icofont-double-left"></i>
-                  </div>
-                  <div className="service-carousel swiper-button-next">
-                    <i className="icofont-double-right"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <section className="service-details-section">
         <div className="container">
           <div className="row mb-n7">
             <div className="col-12 mb-7">
               <div className="service-details">
                 <div className="service-details-list">
-                  <h2 className="title">Search Engine Optimization</h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknowne
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essent ially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknowne
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essent ially unchanged. It was popularised in the 1960s with
-                    the release.
+                  <h2 className="title text-center">
+                    A DIGITAL MARKETING AGENCY THAT <br />
+                    ENHANCES YOUR BUSINESS
+                  </h2>
+                  <p className="text-justify">
+                    Eshi Digital Marketing is like your own marketing
+                    department. We offer high quality marketing services for a
+                    lower price. And you benefit easy access in conversion
+                    optimization, social media management, email marketing,
+                    Google AdWords management, Facebook ad management, website
+                    creation, SEO, graphic design, content writing and more!{' '}
                   </p>
                 </div>
               </div>
             </div>
           </div>
+          {services.map((service, index) => {
+            return index % 2 == 0 ? (
+              <ServiceDetails
+                subTitle={service.subTitle}
+                mainTitle={service.mainTitle}
+                content={service.content}
+                svg={service.svg}
+              >
+                <ul>
+                  {service.children.map((s) => (
+                    <li>⭕ {s}</li>
+                  ))}
+                </ul>
+              </ServiceDetails>
+            ) : (
+              <ServiceDetailsRevesed
+                subTitle={service.subTitle}
+                mainTitle={service.mainTitle}
+                content={service.content}
+                svg={service.svg}
+              >
+                <ul>
+                  {service.children.map((s) => (
+                    <li>⭕ {s}</li>
+                  ))}
+                </ul>
+              </ServiceDetailsRevesed>
+            );
+          })}
 
-          <div className="service-details">
-            <div className="service-details-list">
-              <div className="row mb-n7">
-                <div className="col-lg-7 mb-7">
-                  <h2 className="title">Why is SEO Important for Marketing?</h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Loriem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when and unknowne
-                    printer took a galley type and scrambled it to make a type
-                    specimen book. It has andsurvived not only five centuries
-                    but also the leap into electronic typesetting, remaining
-                    essent ially unchanged. It was popularised 1960s with the
-                    release of Letraset sheets.
-                  </p>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Loriem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when and unknowne
-                    printer took a galley type and scrambled it to make a type
-                    specimen book. It has andsurvived not only five centuries
-                    but also the leap into electronic typesetting.
-                  </p>
-                </div>
-                <div className="col-lg-5 mb-7">
-                  <img
-                    src="assets/images/service-details/1.png"
-                    alt="images-not_found"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="service-details">
-            <div className="service-details-list">
-              <div className="row mb-n7">
-                <div className="col-12 mb-7">
-                  <h2 className="title">How Can I Learn SEO?</h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknowne
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essent ially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="service-details">
-            <div className="service-details-list">
-              <div className="row mb-n7">
-                <div className="col-lg-6 mb-7">
-                  <img
-                    className="experience"
-                    src="assets/images/service-details/2.png"
-                    alt="images-not_found"
-                  />
-                </div>
-
-                <div className="col-12 col-lg-6 mb-7">
-                  <h2 className="title">Service Experience</h2>
-                  <p>
-                    Lorem psum is simply dummy text of the printing and
-                    typesetting industry has been an industry's standard dummy
-                    text ever since the 1500 when an unknowne printer tookga
-                    lley of type and scrambled it to make a type.
-                  </p>
-
-                  <div className="ht-progress" data-offset="100%">
-                    <div className="ht-progress-item">
-                      <div className="progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="60"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        >
-                          <span>60%</span>
-                        </div>
-                      </div>
-                      <h4 className="title">Seo Optimization</h4>
-                    </div>
-                    <div className="ht-progress-item">
-                      <div className="progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="90"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        >
-                          <span>90%</span>
-                        </div>
-                      </div>
-                      <h4 className="title">Pay Per Click</h4>
-                    </div>
-
-                    <div className="ht-progress-item">
-                      <div className="progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="80"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        >
-                          <span>80%</span>
-                        </div>
-                      </div>
-                      <h4 className="title">Email Marketing</h4>
-                    </div>
-                    <div className="ht-progress-item">
-                      <div className="progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          aria-valuenow="85"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        >
-                          <span>85%</span>
-                        </div>
-                      </div>
-                      <h4 className="title">Social Media Marketing</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="service-details">
-            <div className="service-details-list">
-              <div className="row">
-                <div className="col-12">
-                  <h2 className="title">SEO Strategy</h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknowne
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essent ially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknowne
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essent ially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row g-0">
-            <div className="col-12">
-              <div className="next-prev-section">
-                <div className="row mb-n7 mb-md-0 align-items-center align-items-xl-start">
-                  <div className="col-md-4 mb-7 mb-md-0">
-                    <div className="service-prev service-media">
-                      <div className="img">
-                        <img
-                          src="assets/images/service-details/sm-1.png"
-                          alt="images-not_found"
-                        />
-                      </div>
-                      <div className="conten">
-                        <h4 className="title">Digital Marketing</h4>
-                        <a href="case-details.html" className="link">
-                          Previous{' '}
-                          <i className="icofont-rounded-double-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4 mb-7 mb-md-0">
-                    <div className="service-dots text-center">
-                      <img
-                        src="assets/images/service-details/dots.png"
-                        alt="images-not_found"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-4 mb-7 mb-md-0">
-                    <div className="service-next service-media">
-                      <div className="conten">
-                        <h4 className="title">Pay Per Click</h4>
-                        <a href="blog-details.html" className="link">
-                          Next <i className="icofont-rounded-double-right"></i>
-                        </a>
-                      </div>
-                      <div className="img">
-                        <img
-                          src="assets/images/service-details/sm-2.png"
-                          alt="images-not_found"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <hr className="my-5" />
         </div>
       </section>
     </>

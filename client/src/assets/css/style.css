@@ -17567,7 +17567,7 @@ button:focus {
 }
 
 .footer-row .footer-col .footer-widget {
-  padding: 50px 30px 70px 50px;
+  padding: 50px 20px 70px 10px;
 }
 
 @media screen and (max-width: 1199px) {

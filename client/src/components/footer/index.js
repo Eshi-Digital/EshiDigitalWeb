@@ -67,32 +67,20 @@ const Footer = () => {
                     <ul className="footer-menu">
                       <li>
                         <a className="footer-link" href="#">
-                          <i className="icofont-rounded-double-right"></i>Social
-                          Marketing
-                        </a>
-                      </li>
-                      <li>
-                        <a className="footer-link" href="#">
-                          <i className="icofont-rounded-double-right"></i>SEO
-                          Optimization
-                        </a>
-                      </li>
-                      <li>
-                        <a className="footer-link" href="#">
-                          <i className="icofont-rounded-double-right"></i>
-                          Content Marketing
-                        </a>
-                      </li>
-                      <li>
-                        <a className="footer-link" href="#">
-                          <i className="icofont-rounded-double-right"></i>Social
-                          Marketing
+                          <i className="icofont-rounded-double-right"></i>Mobile
+                          app development
                         </a>
                       </li>
                       <li>
                         <a className="footer-link" href="#">
                           <i className="icofont-rounded-double-right"></i>Web
-                          Analytics
+                          design and development
+                        </a>
+                      </li>
+                      <li>
+                        <a className="footer-link" href="#">
+                          <i className="icofont-rounded-double-right"></i>
+                          Social media advertisment
                         </a>
                       </li>
                     </ul>
@@ -104,32 +92,14 @@ const Footer = () => {
                     <ul className="footer-menu">
                       <li>
                         <a className="footer-link" href="#">
-                          <i className="icofont-rounded-double-right"></i>Vision
-                          & Values
+                          <i className="icofont-rounded-double-right"></i>About
+                          us
                         </a>
                       </li>
                       <li>
                         <a className="footer-link" href="#">
                           <i className="icofont-rounded-double-right"></i>
-                          Winning Awards
-                        </a>
-                      </li>
-                      <li>
-                        <a className="footer-link" href="#">
-                          <i className="icofont-rounded-double-right"></i>
-                          Leadership
-                        </a>
-                      </li>
-                      <li>
-                        <a className="footer-link" href="#">
-                          <i className="icofont-rounded-double-right"></i>
-                          Sustainability
-                        </a>
-                      </li>
-                      <li>
-                        <a className="footer-link" href="#">
-                          <i className="icofont-rounded-double-right"></i>
-                          Careers
+                          Contact us
                         </a>
                       </li>
                     </ul>

@@ -21,15 +21,17 @@ const WhyChooseUs = () => {
             <div class="col-lg-6">
               <div class="offset-about">
                 <div class="about-content section-title primary">
-                  <h5 class="sub-title">// Whay Choose Us?</h5>
+                  <h5 class="sub-title">// Why Choose Us?</h5>
                   <h3 class="title">
                     We Are Trusted Digital Marketing Company.
                   </h3>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type scrambled.
+                  <p className="text-justify p-4">
+                    Eshi is a Digital Solution provider HQ’d in Ethiopia. We are
+                    in charge of driving brand awareness and lead generation
+                    through all the digital channels Eshi team has perfected the
+                    science of digital world with a clear focus on delivering
+                    results. And not just likes and reach, we opt for actual
+                    business results, the results that matter.
                   </p>
                   <span class="hr-primary mt-4"></span>
                 </div>
