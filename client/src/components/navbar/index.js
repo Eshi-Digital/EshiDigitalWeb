@@ -10,10 +10,9 @@ const Navbar = () => {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col">
-                  <a href="index.html" className="brand-logo">
-                    {/* <img src="assets/images/logo/logo.png" alt="brand logo" /> */}
+                  <Link to="/" className="brand-logo">
                     <h4>Eshi Digital</h4>
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-auto">
                   <a
@@ -68,16 +67,6 @@ const Navbar = () => {
                         <Link className="main-menu-link" to="/contact">
                           Contact us
                         </Link>
-                      </li>
-
-                      <li className="main-menu-item">
-                        {/* <a
-                          className="btn btn-warning btn-hover-warning btn-lg"
-                          href="blog-details.html"
-                        >
-                          Analyze Your Site{' '}
-                          <i className="icofont-arrow-right"></i>
-                        </a> */}
                       </li>
 
                       <li className="main-menu-item">

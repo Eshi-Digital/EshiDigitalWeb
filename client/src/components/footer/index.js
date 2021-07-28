@@ -4,24 +4,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-12" data-aos="fade-up" data-aos-delay="300">
-            <div className="news-letter pb-100">
-              <form
-                id="mc-form"
-                action="#"
-                className="news-letter-form position-relative"
-              >
-                <input
-                  id="mc-email"
-                  className="form-control"
-                  type="text"
-                  required=""
-                  placeholder="Enter Your Email Address"
-                />
-                <button className="btn btn-warning">
-                  Subscribe Now <i className="icofont-rounded-double-right"></i>
-                </button>
-              </form>
-            </div>
+            <div className="news-letter pb-100"></div>
           </div>
         </div>
 
@@ -109,8 +92,7 @@ const Footer = () => {
                   <div className="footer-widget">
                     <h4 className="title">Follow Us</h4>
                     <p>
-                      Lorem Ipsum is simply dummy text the printing and
-                      typesetting.
+                      You can follow us on the following
                     </p>
                     <ul className="footer-social">
                       <li className="footer-social-item">
@@ -126,6 +108,11 @@ const Footer = () => {
                       <li className="footer-social-item">
                         <a className="footer-social-link" href="#">
                           <i className="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li className="footer-social-item">
+                        <a className="footer-social-link" href="#">
+                          <i className="fab fa-linkedin"></i>
                         </a>
                       </li>
                     </ul>

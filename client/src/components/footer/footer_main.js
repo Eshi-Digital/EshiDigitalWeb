@@ -1,4 +1,5 @@
 import Footer from '.';
+import { Link } from 'react-router-dom';
 
 const FooterMain = () => {
   return (
@@ -135,10 +136,9 @@ const FooterMain = () => {
                 <p>
                   Copyright &copy;
                   <span id="currentYear"></span>
-                  Made With
                   <i class="icofont-heart"></i>
-                  By
-                  <a href="https://hasthemes.com/">Eshi Digital</a>
+                  <Link to="/"> Eshi Digital</Link>
+                  <br />
                   All Rights Reserved
                 </p>
               </div>

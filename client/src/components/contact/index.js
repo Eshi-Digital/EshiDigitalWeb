@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section className="contact-section-page section-pt-150 section-pb-150">
+    <section className="contact-section-page section-pt-100 section-pb-150">
       <div className="container">
         <div className="row g-0">
           <div className="col-12">
@@ -19,7 +19,9 @@ const Contact = () => {
                     <div className="content">
                       <span className="text">Phone:</span>
                       <a href="tel:0123456789" className="number">
-                        (+88) 123 456 789
+                        (+251) 928 97 00 38 <br />
+                        (+251) 946 41 42 57 <br />
+                        (+251) 966 30 30 09
                       </a>
                     </div>
                   </div>
@@ -30,8 +32,11 @@ const Contact = () => {
                     </div>
                     <div className="content">
                       <span className="text">Email:</span>
-                      <a href="mailto:seollyinfo@gmail.com" className="number">
-                        seollyinfo@gmail.com
+                      <a
+                        href="mailto:abenezer@eshidigtal.com"
+                        className="number"
+                      >
+                        abenezer@eshidigtal.com
                       </a>
                     </div>
                   </div>
