@@ -15,29 +15,29 @@ const Footer = () => {
                 <div className="footer-col">
                   <div className="footer-widget">
                     <a className="footer-logo" href="index.html">
-                      <span style={{ color: 'white' }}>Eshi Digital</span>
-                      <img
-                        src="assets/images/logo/logo-white.png"
-                        alt="logo_not_found"
-                      />
+                      <h4 style={{ color: 'white' }} className="ml-4">
+                        Eshi Digital
+                      </h4>
                     </a>
 
                     <ul className="adress">
                       <li>
                         <span className="icon">
-                          <i className="icofont-ui-call"></i>
+                          <i className="fas fa-phone-alt"></i>
                         </span>
-                        <a href="tel:0123456789">(+251) 928 97 00 38</a>
+                        <a href="tel:+251928970038">(+251) 928 97 00 38</a>
                       </li>
                       <li>
                         <span className="icon">
-                          <i className="icofont-send-mail"></i>
+                          <i className="fas fa-envelope"></i>
                         </span>
-                        <a href="mailto:demo@gmail.com">info@eshidigital.com</a>
+                        <a href="mailto:info@eshidigital.com">
+                          info@eshidigital.com
+                        </a>
                       </li>
                       <li>
                         <span className="icon">
-                          <i className="icofont-google-map"></i>
+                          <i class="fas fa-map-marker-alt"></i>
                         </span>
                         Addis Ababa, Ethiopia(ET)
                       </li>
@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-col">
                   <div className="footer-widget">
-                    <h4 className="title">All Services</h4>
+                    <h4 className="title ml-4">All Services</h4>
                     <ul className="footer-menu">
                       <li>
                         <a className="footer-link" href="#">
@@ -71,12 +71,16 @@ const Footer = () => {
                 </div>
                 <div className="footer-col">
                   <div className="footer-widget">
-                    <h4 className="title">Information</h4>
+                    <h4 className="title ml-4">Information</h4>
                     <ul className="footer-menu">
                       <li>
                         <a className="footer-link" href="#">
-                          <i className="icofont-rounded-double-right"></i>About
-                          us
+                          <i className="icofont-rounded-double-right"></i>Team
+                        </a>
+                      </li>
+                      <li>
+                        <a className="footer-link" href="#">
+                          <i className="icofont-rounded-double-right"></i>FAQ
                         </a>
                       </li>
                       <li>
@@ -90,29 +94,39 @@ const Footer = () => {
                 </div>
                 <div className="footer-col">
                   <div className="footer-widget">
-                    <h4 className="title">Follow Us</h4>
-                    <p>
-                      You can follow us on the following
-                    </p>
+                    <h4 className="title ml-4">Follow Us</h4>
+                    <p>You can follow us on the following</p>
                     <ul className="footer-social">
                       <li className="footer-social-item">
-                        <a className="footer-social-link" href="#">
+                        <a
+                          className="footer-social-link"
+                          href="https://www.facebook.com/eshidigital/"
+                        >
                           <i className="fab fa-facebook-f"></i>
                         </a>
                       </li>
                       <li className="footer-social-item">
-                        <a className="footer-social-link" href="#">
+                        <a
+                          className="footer-social-link"
+                          href="https://twitter.com/DigitalEshi"
+                        >
                           <i className="fab fa-twitter"></i>
                         </a>
                       </li>
                       <li className="footer-social-item">
-                        <a className="footer-social-link" href="#">
+                        <a
+                          className="footer-social-link"
+                          href="https://www.instagram.com/eshidigital/"
+                        >
                           <i className="fab fa-instagram"></i>
                         </a>
                       </li>
                       <li className="footer-social-item">
-                        <a className="footer-social-link" href="#">
-                          <i className="fab fa-linkedin"></i>
+                        <a
+                          className="footer-social-link"
+                          href="https://t.me/eshidigital"
+                        >
+                          <i className="fab fa-telegram"></i>
                         </a>
                       </li>
                     </ul>

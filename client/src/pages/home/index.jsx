@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Navbar from '../../components/navbar';
 import MainBanner from '../../components/banner/banner_main';
 import OfferMain from '../../components/offer/offer_main';
 import WorkingProcessMain from '../../components/workingProcess/working_process_main';
@@ -8,15 +7,16 @@ import WhyChooseUs from '../../components/whyChooseUs';
 import TeamMembers from '../../components/team_members';
 import FAQ from '../../components/FAQ';
 import FooterMain from '../../components/footer/footer_main';
+import NavbarCustom from '../../components/navbar';
 
 const Home = () => {
   return (
     <>
-      <Navbar></Navbar>
+      <NavbarCustom></NavbarCustom>
       <MainBanner></MainBanner>
-      <div style={{paddingBottom:'200px'}}></div>
-      <OfferMain></OfferMain>
+      {/* <div style={{ paddingBottom: '200px' }}></div> */}
       <WorkingProcessMain></WorkingProcessMain>
+      <OfferMain></OfferMain>
       <WhyChooseUs></WhyChooseUs>
       <TeamMembers></TeamMembers>
       <FAQ></FAQ>

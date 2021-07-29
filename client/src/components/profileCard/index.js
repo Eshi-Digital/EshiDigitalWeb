@@ -1,8 +1,17 @@
-const ProfileCard = ({ title, profession, imgPath }) => {
+import './style.css';
+
+const ProfileCard = ({
+  title,
+  profession,
+  imgPath,
+  facebookLink,
+  instagramLink,
+  linkedinLink,
+}) => {
   return (
     <>
       <div
-        className="col-lg-3 col-sm-6 mb-7"
+        className="col-lg-3 col-sm-6 mb-7 box-shadow"
         data-aos="fade-up"
         data-aos-delay="300"
       >
@@ -16,17 +25,17 @@ const ProfileCard = ({ title, profession, imgPath }) => {
             />
             <ul className="team-social">
               <li className="team-social-item">
-                <a className="team-social-link" href="#">
+                <a className="team-social-link" href={facebookLink}>
                   <i className="fab fa-facebook-f"></i>
                 </a>
               </li>
               <li className="team-social-item">
-                <a className="team-social-link" href="#">
+                <a className="team-social-link" href={instagramLink}>
                   <i className="fab fa-instagram"></i>
                 </a>
               </li>
               <li className="team-social-item">
-                <a className="team-social-link" href="#">
+                <a className="team-social-link" href={linkedinLink}>
                   <i className="fab fa-linkedin"></i>
                 </a>
               </li>

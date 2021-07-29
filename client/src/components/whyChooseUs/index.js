@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
             <div class="col-lg-6">
               <div class="offset-about">
                 <div class="about-content section-title primary">
-                  <h5 class="sub-title">// Why Choose Us?</h5>
+                  <h5 class="sub-title">Why Choose Us?</h5>
                   <h3 class="title">
                     We Are Trusted Digital Marketing Company.
                   </h3>

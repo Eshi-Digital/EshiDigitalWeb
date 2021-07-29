@@ -16,7 +16,12 @@ const FooterMain = () => {
           alt="images_notFound"
         />
 
-        <svg class="path-svg" viewBox="0 0 126.82 303.68">
+        <svg
+          class="path-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 126.82 303.68"
+        >
           <defs>
             <radialGradient
               id="radial-gradient"
@@ -134,7 +139,7 @@ const FooterMain = () => {
             <div class="row">
               <div class="col-12">
                 <p>
-                  Copyright &copy;
+                  Copyright {new Date().getFullYear()} &copy;
                   <span id="currentYear"></span>
                   <i class="icofont-heart"></i>
                   <Link to="/"> Eshi Digital</Link>
