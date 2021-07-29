@@ -285,7 +285,7 @@ const Service = () => {
             </div>
           </div>
           {services.map((service, index) => {
-            return index % 2 == 0 ? (
+            return index % 2 === 0 ? (
               <ServiceDetails
                 subTitle={service.subTitle}
                 mainTitle={service.mainTitle}

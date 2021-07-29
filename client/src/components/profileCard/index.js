@@ -7,6 +7,7 @@ const ProfileCard = ({
   facebookLink,
   instagramLink,
   linkedinLink,
+  telegramLink
 }) => {
   return (
     <>
@@ -37,6 +38,11 @@ const ProfileCard = ({
               <li className="team-social-item">
                 <a className="team-social-link" href={linkedinLink}>
                   <i className="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li className="team-social-item">
+                <a className="team-social-link" href={telegramLink}>
+                  <i className="fab fa-telegram"></i>
                 </a>
               </li>
             </ul>
