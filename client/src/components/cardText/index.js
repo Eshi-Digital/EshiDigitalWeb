@@ -7,7 +7,6 @@ const CardText = ({ circleImgPath, content, textClass }) => {
             <img src={circleImgPath} alt="Icon_not_found" />
           </div>
           <h3 class={textClass}>{content}</h3>
-          <span class="hr-secodary"></span>
         </div>
       </div>
     </>

@@ -4,15 +4,15 @@ const ProfileCard = ({
   title,
   profession,
   imgPath,
-  facebookLink,
-  instagramLink,
   linkedinLink,
-  telegramLink
+  telegramLink,
+  githubLink,
+  twitterLink,
 }) => {
   return (
     <>
       <div
-        className="col-lg-3 col-sm-6 mb-7 box-shadow"
+        className="col-lg-4 col-sm-6 mb-7 box-shadow"
         data-aos="fade-up"
         data-aos-delay="300"
       >
@@ -20,19 +20,19 @@ const ProfileCard = ({
           <div className="thumb">
             <img src={imgPath} alt="images_not_found" />
             <img
-              className="social-hover"
+              className="social-hover ml-lg-5"
               src="assets/images/team/team-hover.png"
               alt="images_not_found"
             />
             <ul className="team-social">
-              <li className="team-social-item">
-                <a className="team-social-link" href={facebookLink}>
-                  <i className="fab fa-facebook-f"></i>
+              <li className="team-social-item pb-5">
+                <a className="team-social-link" href={twitterLink}>
+                  <i className="fab fa-twitter"></i>
                 </a>
               </li>
               <li className="team-social-item">
-                <a className="team-social-link" href={instagramLink}>
-                  <i className="fab fa-instagram"></i>
+                <a className="team-social-link" href={githubLink}>
+                  <i className="fab fa-github"></i>
                 </a>
               </li>
               <li className="team-social-item">
@@ -40,7 +40,7 @@ const ProfileCard = ({
                   <i className="fab fa-linkedin"></i>
                 </a>
               </li>
-              <li className="team-social-item">
+              <li className="team-social-item mt-2">
                 <a className="team-social-link" href={telegramLink}>
                   <i className="fab fa-telegram"></i>
                 </a>

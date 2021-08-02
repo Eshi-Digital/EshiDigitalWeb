@@ -2,21 +2,14 @@ import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import SocialMedia from '../socialMedia';
 import { Link } from 'react-router-dom';
 
-const NavbarObj = [
-  {
-    title: 'Home',
-  },
-  {},
-];
-
 const NavbarCustom = () => {
   return (
     <>
       <Container>
-        <Navbar expand="lg">
+        <Navbar expand="lg" className="p-4">
           <Navbar.Brand>
             <Link to="/" className="brand-logo">
-              <h4>Eshi Digital</h4>
+              <h2>Eshi Digital</h2>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -26,7 +19,7 @@ const NavbarCustom = () => {
                 <ul className="main-menu">
                   <li className="main-menu-item">
                     <Link className="main-menu-link" to="/">
-                      Home
+                      <h5>Home</h5>
                     </Link>
                   </li>
                 </ul>
@@ -34,16 +27,18 @@ const NavbarCustom = () => {
               <Nav.Link className="mx-5" href="#">
                 <ul className="main-menu">
                   <li className="main-menu-item">
-                    <a className="main-menu-link">About us</a>
+                    <a className="main-menu-link">
+                      <h5>About us</h5>
+                    </a>
                     <ul className="sub-menu">
                       <li>
-                        <Link className="sub-menu-link" to="/team">
-                          Team
+                        <Link className="sub-menu-link" to="#team">
+                          <h5>Team</h5>
                         </Link>
                       </li>
                       <li>
-                        <Link className="sub-menu-link" to="/faq">
-                          FAQ
+                        <Link className="sub-menu-link" to="#FAQ">
+                          <h5>FAQ</h5>
                         </Link>
                       </li>
                     </ul>
@@ -54,7 +49,7 @@ const NavbarCustom = () => {
                 <ul className="main-menu">
                   <li className="main-menu-item">
                     <Link className="main-menu-link" to="/services">
-                      Services
+                      <h5>Services</h5>
                     </Link>
                   </li>
                 </ul>
@@ -63,7 +58,7 @@ const NavbarCustom = () => {
                 <ul className="main-menu">
                   <li className="main-menu-item">
                     <Link className="main-menu-link" to="/contact">
-                      Contact us
+                      <h5>Contact us</h5>
                     </Link>
                   </li>
                 </ul>

@@ -26,7 +26,7 @@ const Banner = ({ bannerTitle, routePath }) => {
                 <li className="breadcrumb-item">
                   <a href="index.html">Home</a>
                 </li>
-                <li class="mx-2 text-white">
+                <li class="mt-1 mx-0 text-white breadcrumb-item">
                   <i class="fas fa-angle-double-right"></i>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">

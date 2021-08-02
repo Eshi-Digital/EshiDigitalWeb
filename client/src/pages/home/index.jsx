@@ -14,7 +14,6 @@ const Home = () => {
     <>
       <NavbarCustom></NavbarCustom>
       <MainBanner></MainBanner>
-      {/* <div style={{ paddingBottom: '200px' }}></div> */}
       <WorkingProcessMain></WorkingProcessMain>
       <OfferMain></OfferMain>
       <WhyChooseUs></WhyChooseUs>

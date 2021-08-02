@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
+
 const MainBanner = () => {
   return (
     <>
-      <section class="hero-section">
+      <section class="hero-section pb-10">
         <img
           class="shape shape1"
           src="assets/images/hero/shape1.png"
@@ -14,31 +16,23 @@ const MainBanner = () => {
         />
         <img
           class="shape particle1"
-          src="assets/images/hero/particle1.png"
+          src="assets/images/hero/particle2.png"
           alt="img_not_found"
         />
         <img
           class="shape particle2"
-          src="assets/images/hero/particle2.png"
+          src="assets/images/hero/particle1.png"
           alt="img_not_found"
         />
         <div class="container">
           <div class="row">
             <div class="col-lg-5 col-xl-6">
               <div class="hero-content">
-                <h2 class="title">Eshi Digital Solutions</h2>
-                <p>
-                  <span class="hr d-none d-xl-block"></span> Eshi is a Digital
-                  Solution which is designed to put your business in everywhere.
-                </p>
-                {/* <form action="#" class="hero-form position-relative">
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="https://yourwebsite.com"
-                  />
-                  <button class="btn btn-warning">Free Audit Now</button>
-                </form> */}
+                <h2 class="title ml-4">Eshi Digital Solutions</h2>
+                <div className="text-justify">
+                  <p>Eshi is a Digital Solution provider HQ’d in Ethiopia.</p>
+                </div>
+
                 <img
                   class="particle3"
                   src="assets/images/hero/particle3.png"

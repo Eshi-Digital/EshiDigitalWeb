@@ -1,3 +1,24 @@
+const WhyChooseUsObj = [
+  {
+    title: 'High Customer Retention Rate',
+    content:
+      'Marketers who have limited experience with content marketing often worry that the cost of creating content is just too expensive for their company. The reality is that marketers often expect to pay way more than creators charge for various content assets.',
+    imgPath: 'assets/images/icon/1.png',
+  },
+  {
+    title: 'Dedicated Customer Support',
+    content:
+      'Lorem Ipsum is simply dummy text of the printing typesetting Ipsum has been the industrys standard dummy.',
+    imgPath: 'assets/images/icon/2.png',
+  },
+  {
+    title: 'Professional Team Member',
+    content:
+      'Lorem Ipsum is simply dummy text of the printing typesetting Ipsum has been the industrys standard dummy.',
+    imgPath: 'assets/images/icon/3.png',
+  },
+];
+
 const WhyChooseUs = () => {
   return (
     <>
@@ -33,59 +54,24 @@ const WhyChooseUs = () => {
                     results. And not just likes and reach, we opt for actual
                     business results, the results that matter.
                   </p>
-                  <span class="hr-primary mt-4"></span>
                 </div>
                 <div class="about-object">
-                  <div class="about-object-list">
-                    <div class="icon">
-                      <img
-                        src="assets/images/icon/1.png"
-                        alt="images-not_found"
-                      />
-                    </div>
-                    <div class="about-object-content">
-                      <h4 class="title">High Customer Retention Rate</h4>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing
-                        typesetting Ipsum has been the industry's standard
-                        dummy.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="about-object-list">
-                    <div class="icon">
-                      <img
-                        src="assets/images/icon/2.png"
-                        alt="images-not_found"
-                      />
-                    </div>
-                    <div class="about-object-content">
-                      <h4 class="title">Dedicated Customer Support</h4>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing
-                        typesetting Ipsum has been the industry's standard
-                        dummy.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="about-object-list">
-                    <div class="icon">
-                      <img
-                        src="assets/images/icon/3.png"
-                        alt="images-not_found"
-                      />
-                    </div>
-                    <div class="about-object-content">
-                      <h4 class="title">Professional Team Member</h4>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing
-                        typesetting Ipsum has been the industry's standard
-                        dummy.
-                      </p>
-                    </div>
-                  </div>
+                  {WhyChooseUsObj.map((whyChooseUs) => {
+                    return (
+                      <div class="about-object-list">
+                        <div class="icon">
+                          <img
+                            src={whyChooseUs.imgPath}
+                            alt="images-not_found"
+                          />
+                        </div>
+                        <div class="about-object-content">
+                          <h4 class="title">{whyChooseUs.title}</h4>
+                          <p className="text-justify pr-4">{whyChooseUs.content}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>

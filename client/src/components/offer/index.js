@@ -8,7 +8,7 @@ const OfferCard = ({
   return (
     <>
       <div class="col-md-6 mb-7" data-aos="fade-up" data-aos-delay="500">
-        <div class="service-card">
+        <div class="service-card" style={{height:'300px'}}>
           <img class="line" src={lineImgPath} alt="images_not_found" />
           <div class="service-icon">
             <div class="roted-around dagnger">

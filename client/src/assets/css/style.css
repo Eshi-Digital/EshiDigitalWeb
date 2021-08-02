@@ -1,4 +1,6 @@
-@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+
+/* @charset "UTF-8"; */
 /*-------------------------------------------------------------
 
   #  Template Name: Sheolly - SEO & Digital Marketing Agency Bootstrap 5 Template
@@ -117,7 +119,7 @@
 
 body {
   margin: 0;
-  font-family: "Ruda", sans-serif;
+  font-family: 'STIX Two Text', serif;
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.8;
@@ -6429,7 +6431,7 @@ fieldset:disabled .btn {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Ruda", sans-serif;
+  font-family: 'STIX Two Text', serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.8;
@@ -6542,7 +6544,7 @@ fieldset:disabled .btn {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Ruda", sans-serif;
+  font-family: 'STIX Two Text', serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.8;
@@ -13765,7 +13767,7 @@ li {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'STIX Two Text', serif;
 }
 
 p:last-child {
@@ -14351,7 +14353,7 @@ button:focus {
 }
 
 .offcanvas-menu a:not(:only-child):after {
-  font-family: IcoFont;
+  font-family: 'STIX Two Text', serif;
   content: "\efc2";
   position: absolute;
   right: 15px;
@@ -14425,7 +14427,7 @@ button:focus {
 }
 
 .header-top p {
-  font-family: "Ruda", sans-serif;
+  font-family: 'STIX Two Text', serif;
   font-weight: 400;
   color: #fff;
 }
@@ -15989,7 +15991,7 @@ button:focus {
 }
 
 .about-card-list .read-more {
-  font-family: "Roboto", sans-serif;
+  font-family: 'STIX Two Text', serif;
   font-weight: 700;
   font-size: 14px;
   color: #fc7418;
@@ -16828,7 +16830,7 @@ button:focus {
 
 .designation {
   color: #fc7418;
-  font-family: "Roboto", sans-serif;
+  font-family: 'STIX Two Text', serif;
   font-size: 15px;
   line-height: 1.8;
   margin-top: 5px;
@@ -17614,7 +17616,7 @@ button:focus {
 }
 
 .footer-widget p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'STIX Two Text', serif;
   font-weight: 400;
   line-height: 1.687;
   color: #c6c9d8;
@@ -17660,7 +17662,7 @@ button:focus {
 }
 
 .adress li {
-  font-family: "Roboto", sans-serif;
+  font-family: 'STIX Two Text', serif;
   font-weight: 400;
   line-height: 1.687;
   color: #c6c9d8;
@@ -17694,7 +17696,7 @@ button:focus {
 }
 
 .footer-link {
-  font-family: "Roboto", sans-serif;
+  font-family: 'STIX Two Text', serif;
   font-weight: 400;
   line-height: 2.533;
   color: #c6c9d8;
@@ -17928,7 +17930,7 @@ button:focus {
 .breadcrumb-item + .breadcrumb-item::before {
   padding-right: 0.5rem;
   color: #fff;
-  font-family: "IcoFont";
+  font-family: 'STIX Two Text', serif;
   content: var(--bs-breadcrumb-divider, "");
 }
 

@@ -6,15 +6,26 @@ const Contact = () => {
           <div className="col-12">
             <div className="contact-form-card">
               <div className="row mb-n7">
+                <div className="col-12 mb-7">
+                  <div className="section-title">
+                    <div className="text-center">
+                      <i className="fa fa-location fa-4x"></i>
+                    </div>
+                    <h3 className="title text-center">Our Location.</h3>
+                  </div>
+                  <iframe
+                    className="google-map"
+                    src="https://maps.google.com/maps?q=Lideta%20firdbet&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  ></iframe>
+                </div>
                 <div className="col-lg-6 mb-7">
                   <div className="section-title">
                     <h3 className="title">Get In Touch.</h3>
-                    <span className="comment-hr mb-0"></span>
                   </div>
 
                   <div className="contact-media contact-media-list mt-xl-8">
                     <div className="icon">
-                      <span className="icofont-ui-call"></span>
+                      <span className="fa fa-phone"></span>
                     </div>
                     <div className="content">
                       <span className="text">Phone:</span>
@@ -28,33 +39,37 @@ const Contact = () => {
 
                   <div className="contact-media contact-media-list">
                     <div className="icon">
-                      <span className="icofont-send-mail"></span>
+                      <span className="fa fa-envelope"></span>
                     </div>
                     <div className="content">
                       <span className="text">Email:</span>
                       <a
-                        href="mailto:abenezer@eshidigtal.com"
+                        href="mailto:info@eshidigtal.com"
                         className="number"
                       >
-                        abenezer@eshidigtal.com
+                        info@eshidigtal.com
                       </a>
                     </div>
                   </div>
 
                   <div className="contact-media contact-media-list">
                     <div className="icon">
-                      <span className="icofont-map-pins"></span>
+                      <span className="fa fa-city"></span>
                     </div>
                     <div className="content">
                       <span className="text">Address:</span>
-                      <h3 className="number">Lideta, Addis Ababa,Ethiopia.</h3>
+                      <h3 className="number">
+                        Lideta,
+                        <br /> Addis Ababa,
+                        <br />
+                        Ethiopia.
+                      </h3>
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-6 mb-7">
                   <div className="section-title">
                     <h3 className="title">Send Us A Message</h3>
-                    <span className="comment-hr mb-0"></span>
                   </div>
                   <div className="comment-form pt-xl-8">
                     <form
@@ -89,12 +104,6 @@ const Contact = () => {
                     </form>
                     <p className="form-message"></p>
                   </div>
-                </div>
-                <div className="col-12 mb-7">
-                  <iframe
-                    className="google-map"
-                    src="https://maps.google.com/maps?q=Lideta%20firdbet&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                  ></iframe>
                 </div>
               </div>
             </div>
