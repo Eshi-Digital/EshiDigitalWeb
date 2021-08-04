@@ -6,7 +6,7 @@ const ServiceDetails = ({ mainTitle, subTitle, content, children, svg }) => {
         <div className="service-details-list">
           <div className="row mb-n7">
             <div className="col-lg-6 mb-7 text-center">
-              <h4 className="text-center text-dark mb-5">{subTitle}</h4>
+              <h4 className="text-center text-dark mb-5 pt-8">{subTitle}</h4>
               {/* SVG ICON */}
               {svg}
             </div>

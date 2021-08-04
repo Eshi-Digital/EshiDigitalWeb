@@ -9,7 +9,11 @@ const NavbarCustom = () => {
         <Navbar expand="lg" className="p-4">
           <Navbar.Brand>
             <Link to="/" className="brand-logo">
-              <h2>Eshi Digital</h2>
+              <img
+              className="pb-2 pl-4"
+                style={{ width: '140px', height: '80px' }}
+                src={'assets/images/logo/eshi_colored_name.png'}
+              />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -32,14 +36,14 @@ const NavbarCustom = () => {
                     </a>
                     <ul className="sub-menu">
                       <li>
-                        <Link className="sub-menu-link" to="#team">
+                        <a className="sub-menu-link" href="#team">
                           <h5>Team</h5>
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link className="sub-menu-link" to="#FAQ">
+                        <a className="sub-menu-link" href="#FAQ">
                           <h5>FAQ</h5>
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </li>

@@ -11,7 +11,6 @@ const Service = () => {
       <Navbar />
       <Banner bannerTitle="Services" routePath="Services"></Banner>
       <ServiceComponent />
-
       <FooterMain />
     </>
   );

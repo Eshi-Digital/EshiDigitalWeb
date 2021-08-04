@@ -4,8 +4,8 @@ import ServiceDetailsRevesed from './service_details_reversed';
 
 const services = [
   {
-    mainTitle: 'Your company on your palm',
-    subTitle: 'Mobile App development',
+    mainTitle: 'Your Company On Your Palm',
+    subTitle: 'Mobile App Development',
     content:
       'In order to grow your company and unlock consumer scope, we can develop you mobile apps like never before. The digital era encourages consumers to embrace modern technologies easily, considering the time we are in, as corporations keep up with it and search for new ways to deliver their services.',
     children: [
@@ -120,8 +120,8 @@ const services = [
   },
 
   {
-    mainTitle: 'You are your website',
-    subTitle: 'Web design and development',
+    mainTitle: 'You Are Your Website',
+    subTitle: 'Web Design And Development',
     content:
       'Your website is the most important component of your marketing strategy. It serves as the hub of all of your online activity. It is where you will make money, or lose money. We design websites that help you generate the most conversions. We do this by delivering an attractive design, mobile responsiveness, user-friendly and importantly, sales-focused websites.',
     children: [
@@ -226,8 +226,8 @@ const services = [
   },
 
   {
-    mainTitle: 'Social media advertisment',
-    subTitle: 'Reaching your target with advertisment',
+    mainTitle: 'Social Media Advertisment',
+    subTitle: 'Reaching Your Target With Advertisment',
     content:
       'Two billion people use Facebook every month. Your customers and your future customers go there every day! Whether it’s for business-specific services or products that target individuals, Facebook can be a growth engine for your organization. Let us target the right people at the right time to drive sales for your business.',
     children: [
@@ -264,7 +264,7 @@ const Service = () => {
     <>
       <section className="service-details-section">
         <div className="container">
-          <div className="row mb-n7">
+          <div className="row mb-n7 my-8">
             <div className="col-12 mb-7">
               <div className="service-details">
                 <div className="service-details-list">
@@ -294,7 +294,7 @@ const Service = () => {
               >
                 <ul>
                   {service.children.map((s) => (
-                    <li>⭕ {s}</li>
+                    <li>✔ {s}</li>
                   ))}
                 </ul>
               </ServiceDetails>
@@ -307,7 +307,7 @@ const Service = () => {
               >
                 <ul>
                   {service.children.map((s) => (
-                    <li>⭕ {s}</li>
+                    <li>✔ {s}</li>
                   ))}
                 </ul>
               </ServiceDetailsRevesed>

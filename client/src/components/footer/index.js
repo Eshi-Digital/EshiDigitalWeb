@@ -12,14 +12,16 @@ const Footer = () => {
 
         <div className="row">
           <div className="col-12" data-aos="fade-up" data-aos-delay="600">
-            <div className="footer-card">
+            <div className="">
               <div className="footer-row">
                 <div className="footer-col">
                   <div className="footer-widget">
                     <a className="footer-logo" href="index.html">
-                      <h4 style={{ color: 'white' }} className="ml-4">
-                        Eshi Digital
-                      </h4>
+                      <img
+                        className="pb-2 pl-4"
+                        style={{ width: '140px', height: '80px' }}
+                        src={'assets/images/logo/eshi_colored_name.png'}
+                      />
                     </a>
 
                     <ul className="adress">

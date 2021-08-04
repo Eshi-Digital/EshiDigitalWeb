@@ -1,4 +1,30 @@
+import { useState } from 'react';
+
 const Contact = () => {
+  const [form, setForm] = useState({
+    fname: '',
+    email: '',
+    phone: '',
+    message: '',
+    formErrors: { email: '', fname: '', phone: '', message: '' },
+    emailValid: false,
+    fnameValid: false,
+    phoneValid: false,
+    messageValid: false,
+  });
+
+  const [count, setCount] = useState(1);
+
+  const updateForm = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  
+
+  console.log(form);
   return (
     <section className="contact-section-page section-pt-100 section-pb-150">
       <div className="container">
@@ -20,7 +46,7 @@ const Contact = () => {
                 </div>
                 <div className="col-lg-6 mb-7">
                   <div className="section-title">
-                    <h3 className="title">Get In Touch.</h3>
+                    <h3 className="title text-center">Get In Touch.</h3>
                   </div>
 
                   <div className="contact-media contact-media-list mt-xl-8">
@@ -29,11 +55,11 @@ const Contact = () => {
                     </div>
                     <div className="content">
                       <span className="text">Phone:</span>
-                      <a href="tel:0123456789" className="number">
+                      <span className="number">
                         (+251) 928 97 00 38 <br />
                         (+251) 946 41 42 57 <br />
                         (+251) 966 30 30 09
-                      </a>
+                      </span>
                     </div>
                   </div>
 
@@ -43,10 +69,7 @@ const Contact = () => {
                     </div>
                     <div className="content">
                       <span className="text">Email:</span>
-                      <a
-                        href="mailto:info@eshidigtal.com"
-                        className="number"
-                      >
+                      <a href="mailto:info@eshidigtal.com" className="number">
                         info@eshidigtal.com
                       </a>
                     </div>
@@ -67,42 +90,110 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="col-lg-6 mb-7">
                   <div className="section-title">
-                    <h3 className="title">Send Us A Message</h3>
+                    <h3 className="title">Send us a message</h3>
                   </div>
                   <div className="comment-form pt-xl-8">
                     <form
                       id="contactForm"
-                      action="https://htmlmail.hasthemes.com/saidul/seolly/contact.php"
-                      method="POST"
+                      action=""
+                      onSubmit={() => {
+                        console.log('Submitted a form');
+                      }}
                     >
-                      <input
-                        className="form-control"
-                        placeholder="Enter Your Name"
-                        type="text"
-                        name="name"
-                      />
-                      <input
-                        className="form-control"
-                        placeholder="Enter Your Email"
-                        type="text"
-                        name="email"
-                      />
-                      <textarea
-                        placeholder="Comment"
-                        className="form-control textarea-control"
-                        id="textarea"
-                        cols="30"
-                        rows="10"
-                        name="massage"
-                      ></textarea>
-                      <button type="submit" className="btn btn-warning">
-                        Submit Comment
-                        <i className="icofont-rounded-double-right"></i>
+                      {count === 1 ? (
+                        <>
+                          {' '}
+                          <label>Full name</label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            name="fname"
+                            onChange={updateForm}
+                            value={form.fullName}
+                            placeholder="Full name"
+                            required={count === 1}
+                          />
+                        </>
+                      ) : null}
+
+                      {count === 2 ? (
+                        <>
+                          <label>Email</label>
+                          <input
+                            className="form-control"
+                            type="email"
+                            name="email"
+                            onChange={updateForm}
+                            value={form.email}
+                            placeholder="Email"
+                          />
+                          <label>Phone Number</label>
+                          <input
+                            className="form-control"
+                            type="text"
+                            name="phone"
+                            onChange={updateForm}
+                            value={form.phoneNumber}
+                            placeholder="Phone number"
+                          />
+                        </>
+                      ) : null}
+
+                      {count === 3 ? (
+                        <>
+                          <label>Your message</label>
+                          <textarea
+                            className="form-control textarea-control"
+                            id="textarea"
+                            cols="30"
+                            rows="10"
+                            name="message"
+                            onChange={updateForm}
+                            value={form.message}
+                            placeholder="Write your message here..."
+                          ></textarea>
+                        </>
+                      ) : null}
+
+                      <button
+                        className="btn btn-dark mx-2"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setCount(count - 1);
+                        }}
+                        disabled={count < 2}
+                      >
+                        Previous
                       </button>
+                      {count === 3 ? (
+                        <>
+                          <button
+                            type="submit"
+                            className="btn btn-success mx-2"
+                          >
+                            Submit
+                          </button>
+                        </>
+                      ) : null}
+
+                      {count === 3 ? null : (
+                        <>
+                          <button
+                            className="btn btn-secondary mx-2"
+                            onClick={(e) => {
+                              e.preventDefault();
+                              setCount(count + 1);
+                            }}
+                            disabled={count > 2}
+                          >
+                            Next
+                          </button>
+                        </>
+                      )}
                     </form>
-                    <p className="form-message"></p>
                   </div>
                 </div>
               </div>
