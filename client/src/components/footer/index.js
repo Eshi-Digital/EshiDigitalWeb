@@ -19,8 +19,8 @@ const Footer = () => {
                     <a className="footer-logo" href="index.html">
                       <img
                         className="pb-2 pl-4"
-                        style={{ width: '140px', height: '80px' }}
-                        src={'assets/images/logo/eshi_colored_name.png'}
+                        style={{ width: '250px', height: '100px' }}
+                        src={'assets/images/logo/eshi_colored_name.svg'}
                       />
                     </a>
 
