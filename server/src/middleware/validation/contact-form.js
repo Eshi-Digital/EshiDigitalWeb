@@ -25,7 +25,7 @@ exports.validate = (type) => {
           .not()
           .isEmpty()
           .withMessage("Phone number is required"),
-        body("subject").not().isEmpty().withMessage("Subject is required"),
+        // body("subject").not().isEmpty().withMessage("Subject is required"),
         body("message").not().isEmpty().withMessage("Message is required"),
       ];
 

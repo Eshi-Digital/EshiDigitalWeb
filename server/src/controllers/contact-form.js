@@ -1,5 +1,5 @@
-const ContactForm = require("../models/contact-form");
-const { validationResult } = require("express-validator");
+const ContactForm = require('../models/contact-form');
+const { validationResult } = require('express-validator');
 /**
  *
  * @param {Object} req
@@ -12,7 +12,7 @@ exports.getAllContactForms = async (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       res.status(400).json({
-        status: "error",
+        status: 'error',
         message: errors.array()[0].msg,
       });
     }
@@ -20,12 +20,12 @@ exports.getAllContactForms = async (req, res, next) => {
     const options = {
       page: req.query.page * 1 || 1,
       limit: req.query.limit * 1 || 10,
-      sort: "-createdAt",
+      sort: '-createdAt',
     };
 
     const result = await ContactForm.paginate({}, options);
     res.status(200).json({
-      status: "success",
+      status: 'success',
       result,
     });
   } catch (err) {
@@ -38,19 +38,19 @@ exports.getContactForm = async (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       res.status(400).json({
-        status: "error",
+        status: 'error',
         message: errors.array()[0].msg,
       });
     }
     const contactForm = await ContactForm.findById(req.params.id);
     if (!contactForm) {
       res.status(404).json({
-        status: "error",
-        message: "Contact form with this ID does not exist",
+        status: 'error',
+        message: 'Contact form with this ID does not exist',
       });
     }
     res.status(200).json({
-      status: "success",
+      status: 'success',
       contactForm,
     });
   } catch (err) {}
@@ -61,7 +61,7 @@ exports.createContactForm = async (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       res.status(400).json({
-        status: "error",
+        status: 'error',
         message: errors.array()[0].msg,
       });
     }
@@ -69,9 +69,10 @@ exports.createContactForm = async (req, res, next) => {
       ...req.body,
     });
     res.status(201).json({
-      status: "success",
+      status: 'success',
       contactForm,
     });
+    console.log('Created Successfully');
   } catch (err) {
     //TODO
   }
@@ -82,7 +83,7 @@ exports.updateContactForm = async (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       res.status(400).json({
-        status: "error",
+        status: 'error',
         message: errors.array()[0].msg,
       });
     }
@@ -92,12 +93,12 @@ exports.updateContactForm = async (req, res, next) => {
     );
     if (!contactForm) {
       res.status(404).json({
-        status: "error",
-        message: "Contact Form with this ID does not exist",
+        status: 'error',
+        message: 'Contact Form with this ID does not exist',
       });
     }
     res.status(200).json({
-      status: "success",
+      status: 'success',
       contactForm,
     });
   } catch (err) {
@@ -109,19 +110,19 @@ exports.deleteContactForm = async (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       res.status(400).json({
-        status: "error",
+        status: 'error',
         message: errors.array()[0].msg,
       });
     }
     const contactForm = await ContactForm.findByIdAndDelete(req.params.id);
     if (!contactForm) {
       res.status(404).json({
-        status: "error",
-        message: "Contact Form with this ID does not exist",
+        status: 'error',
+        message: 'Contact Form with this ID does not exist',
       });
     }
     res.status(204).json({
-      status: "success",
+      status: 'success',
       contactForm: null,
     });
   } catch (err) {

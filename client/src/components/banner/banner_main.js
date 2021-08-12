@@ -15,11 +15,6 @@ const MainBanner = () => {
           alt="img_not_found"
         />
         <img
-          class="shape particle1"
-          src="assets/images/hero/particle2.png"
-          alt="img_not_found"
-        />
-        <img
           class="shape particle2"
           src="assets/images/hero/particle1.png"
           alt="img_not_found"
@@ -28,7 +23,7 @@ const MainBanner = () => {
           <div class="row">
             <div class="col-lg-5 col-xl-6">
               <div class="hero-content">
-                <h2 class="title ml-4">Eshi Digital Solutions</h2>
+                <h2 class="title">Eshi Digital Solutions</h2>
                 <div className="text-justify">
                   <p>Eshi is a Digital Solution provider HQ’d in Ethiopia.</p>
                 </div>
@@ -52,7 +47,7 @@ const MainBanner = () => {
                 <div class="position-absolute animate-two ml-5">
                   <img
                     data-aos="fade-up"
-                    data-aos-delay="600"
+                    data-aos-delay="800"
                     src="assets/images/hero/2.png"
                     alt="img_not_found"
                   />
@@ -61,7 +56,7 @@ const MainBanner = () => {
                 <div class="position-absolute animate-three">
                   <img
                     data-aos="fade-down"
-                    data-aos-delay="400"
+                    data-aos-delay="800"
                     src="assets/images/hero/3.png"
                     alt="img_not_found"
                   />

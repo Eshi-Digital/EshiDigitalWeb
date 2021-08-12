@@ -39,7 +39,7 @@ const offerCardObj = [
 const OfferMain = () => {
   return (
     <>
-      <section className="service-section section-pb-150 pt-10">
+      <section className="service-section pt-10">
         <div className="container">
           <div className="row">
             <CardText

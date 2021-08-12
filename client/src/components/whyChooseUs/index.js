@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
           alt="images-not_found"
           class="about-bg"
         />
-        <div class="container">
+        <div class="container px-10">
           <div class="row">
             <div class="col-lg-6">
               <div
