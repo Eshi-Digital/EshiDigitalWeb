@@ -12,7 +12,7 @@ const teamMembersObj = [
     telegramLink: 'https://t.me/AfroBlackie',
   },
   {
-    imgPath: 'assets/images/team/rediet.png',
+    imgPath: 'assets/images/team/rediet.jpg',
     title: 'Rediet Mengiste',
     profession: 'CDO',
     twitterLink: '',
